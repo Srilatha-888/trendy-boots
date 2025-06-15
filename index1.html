@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,37 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>THESUS Outdoors Demo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="script.js" />
 </head>
 <body>
  <div class="announcement-bar">Free shipping in North America</div>
  <nav class="navbar">
-  <div class="logo">THESUS</div>
+ <a href="/thesus.html">
+      <img src="images/THESUS-LOGO1.avif" alt="Thesus Logo" class="logo" style="width: 150px;" />
+    </a>
+    
    <ul class="nav-links">
     
       <li><a href="#">Rain</a></li>
-      <li><a href="#" class="active">Snow</a></li>
+      <li><a href="/snow.html" class="active">Snow</a></li>
       <li><a href="#">The Weekend Boot</a></li>
       <li><a href="#">Shop All</a></li>
       <li><a href="#">About&nbsp;Us</a></li>
     </ul>
 
     <div class="nav-icons">
+      
      
       <div class="currency-dropdown">
-        <button id="dropBtn" class="dropdown-toggle">INR ₹ | India ▾</button>
-        <ul id="dropMenu" class="dropdown-menu">
-          <li><a href="#">INR ₹ | India</a></li>
-          <li><a href="#">USD $ | USA</a></li>
-          <li><a href="#">EUR € | Europe</a></li>
-          <li><a href="#">GBP £ | UK</a></li>
-          <li><a href="#">JPY ¥ | Japan</a></li>
-        </ul>
+        <!-- <button id="dropBtn" class="dropdown-toggle">INR ₹ | India ▾ </button> -->
+        <select name="Cash" id="dropMenu1" >
+          <option value="INR">INR ₹ | India</option>
+          <option value="USD">USD $ | USA</option>
+          <option value="EUR">EUR € | Europe</option>
+          <option value="GBP">GBP £ | UK</option>
+          <option value="JPY">JPY ¥ | Japan</option>
+        </select>
+        
       </div>
-      <span class="icon">🔍</span>
-      <span class="icon">👤</span>
-      <span class="icon">👜</span>
+      <span class="icon"><img src="icons/search_28dp_000000_FILL0_wght400_GRAD0_opsz24.png"></span>
+      <span class="icon"><img src="icons/person_28dp_000000_FILL0_wght400_GRAD0_opsz24.png"></span>
+      <span class="icon"><img src="icons/local_mall_28dp_000000_FILL0_wght400_GRAD0_opsz24.png"></span>
   
     </div>
   </nav>
@@ -47,35 +53,51 @@
       <h1>Be Outside.&nbsp;Comfy All day.</h1>
       <a href="#" class="cta-button">Shop sustainable outdoor footwear.</a>
     </div>
-  <img class="hero-img" src="./index image.jpg" alt="">
+  <img class="hero-img" src="images/June_hero_2025_-_thesus.webp" alt="">
   </header>
   
 
   <section class="beoutside">
-    <center><h1><strong>The next best thing to walking barefoot.<br>#ZeroWaste</strong></h1></center>
+    <center><h1 style="font-size: 50px; margin-bottom: 75px;margin-top: 75px;"><strong>The next best thing to walking barefoot.<br>#ZeroWaste</strong></h1></center>
     <div class="categories">
-      <div class="category">
-        <img src="https://thesusoutdoors.com/cdn/shop/collections/anyday-rainboot-collection.png?v=1710533902&width=750" alt="">
-        <p>Rain <span class="arrow">→</span></p>
-      </div>
-      <div class="category">
-        <img src="https://thesusoutdoors.com/cdn/shop/collections/ethical-hiking-boot-yellow.png?v=1694501390&width=750" alt="">
-        <p>All weather <span class="arrow">→</span></p>
-      </div>
-      <div class="category">
-        <img src="https://thesusoutdoors.com/cdn/shop/collections/winter-boot-sustainable.png?v=1710533928&width=750" alt="">
-        <p>Snow <span class="arrow">→</span></p>
-      </div>
-      <div class="category">
-        <img src="https://thesusoutdoors.com/cdn/shop/collections/sage-green-sustainable-clog.png?v=1686561141&width=750" alt="">
-        <p>Sun <span class="arrow">→</span></p>
-      </div>
+  <div class="category">
+    <div class="image-wrapper">
+      <img src="https://thesusoutdoors.com/cdn/shop/collections/anyday-rainboot-collection.png?v=1710533902&width=750" alt="">
     </div>
+    <p>Rain <span class="arrow">→</span></p>
+  </div>
+  <div class="category">
+    <div class="image-wrapper">
+      <img src="https://thesusoutdoors.com/cdn/shop/collections/ethical-hiking-boot-yellow.png?v=1694501390&width=750" alt="">
+    </div>
+    <p>All weather <span class="arrow">→</span></p>
+  </div>
+  <div class="category">
+    <div class="image-wrapper">
+      <img src="https://thesusoutdoors.com/cdn/shop/collections/winter-boot-sustainable.png?v=1710533928&width=750" alt="">
+    </div>
+    <p>Snow <span class="arrow">→</span></p>
+  </div>
+  <div class="category">
+    <div class="image-wrapper">
+      <img src="https://thesusoutdoors.com/cdn/shop/collections/sage-green-sustainable-clog.png?v=1686561141&width=750" alt="">
+    </div>
+    <p>Sun <span class="arrow">→</span></p>
+  </div>
+</div>
+
+  </section>
+
+  <section class="product-info">
+    <h2>Get Them Before They're Gone!</h2>
+    <h5>Sizes are running out, get your pair before they are gone.</h5>
   </section>
 
   
-  <section class="product-grid">
-    <!-- card 1 -->
+  <section class="product-grid product-grid-wrapper">
+    
+    <div class="product-scroll-wrapper">
+        <!-- card 1 -->
     <div class="product-card">
       <img src="https://thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-beige_8e962baf-3a3e-4037-a15a-0d254d3b8e1a.png?v=1686559402&width=990"
            alt=""
@@ -140,9 +162,53 @@
       <p class="price"><del>Rs. 20,800</del> Rs. 15,800</p>
       <button>Choose options</button>
     </div>
-     <button class="View all">View all</button>
-  </section>
 
+    <!-- card 5 -->
+    <div class="product-card">
+      <img src="https://thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-beige_8e962baf-3a3e-4037-a15a-0d254d3b8e1a.png?v=1686559402&width=990"
+           alt=""
+           onmouseover="this.src='https://thesusoutdoors.com/cdn/shop/products/2021_Footwear_Walking_Boots_Women_Vegan_Sustainable3--1.jpg?v=1686668626&width=533'"
+           onmouseout ="this.src='https://thesusoutdoors.com/cdn/shop/files/winter-boots-city-black.png?v=1686668626&width=600'">
+      <span class="badge">Sale</span>
+      <h3>✨ The Allegra Weekend Boot</h3>
+      <div class="rating">
+         ★★★★★
+        <span class="number">(15)</span>
+     </div>
+
+      <p class="price"><del>Rs. 20,800</del> Rs. 15,800</p>
+      <button>Choose options</button>
+    </div>
+
+    <!-- card 6 -->
+    <div class="product-card">
+      <img src="https://thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-beige_8e962baf-3a3e-4037-a15a-0d254d3b8e1a.png?v=1686559402&width=990"
+           alt=""
+           onmouseover="this.src='https://thesusoutdoors.com/cdn/shop/files/Frame12.png?v=1696457128&width=533'"
+           onmouseout ="this.src='https://thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-black.png?v=1686559314&width=600'">
+      <span class="badge">Sale</span>
+      <h3>✨ The Allegra Weekend Boot</h3>
+      <div class="rating">
+         ★★★★★
+        <span class="number">(15)</span>
+     </div>
+
+      <p class="price"><del>Rs. 20,800</del> Rs. 15,800</p>
+      <button>Choose options</button>
+    </div>
+
+    </div>
+
+  </section>
+  <div class="scroll-controls">
+            <div class="scroll-btn" id="prevBtn">‹</div>
+            <div class="scroll-indicator" id="indicator">1/3</div>
+            <div class="scroll-btn" id="nextBtn">›</div>
+        </div>
+
+  <div>
+    <button class="view-all">View all</button>
+  </div>
   
   <section class="feature-section">
     <div class="feature-image">
@@ -150,62 +216,97 @@
     </div>
     <div class="feature-content">
       <h1>Thesus footwear is thoughtfully designed from natural and recycled materials</h1>
-      <p>Each pair diverts 1–2 kg of waste, reduces 20 kg of CO₂, and saves 10 L of water versus a leather boot.</p>
+      <p>Each pair diverts 1-2 kg of waste from our waterways and landfill, reduces 20kg of CO2 from the atmosphere, and conserves 10L of water when compared to your traditional leather boot.</p>
       <button class="learn-more">Learn more</button>
     </div>
   </section>
 
 
-  <section class="bestsellers">
+    <section class="bestsellers">
     <h2>Thesus Bestsellers</h2>
-    <div class="best-products">
-      <div class="product-card">
-        <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers1.png?v=1699432540&width=400" alt="">
-        <p class="name">The Anyday Rain Boot in Black <span class="arrow">→</span></p>
+    <div class="product-grid">
+      <div class="product">
+        <div class="image-wrapper">
+          <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers1.png?v=1699432540&width=400" alt="The Anyday Rain Boot in Black" />
+        </div>
+        <p>The Anyday Rain Boot in Black <span class="arrow">→</span></p>
       </div>
-      <div class="product-card">
-        <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers2.png?v=1699432541&width=400" alt="">
-        <p class="name">The Weekend Boot in Beige <span class="arrow">→</span></p>
+      <div class="product">
+        <div class="image-wrapper">
+          <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers2.png?v=1699432541&width=400" alt="The Weekend Boot in Beige" />
+        </div>
+        <p>The Weekend Boot in Beige <span class="arrow">→</span></p>
       </div>
-      <div class="product-card">
-        <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers3.png?v=1699432540&width=400" alt="">
-        <p class="name">The Modern Winter Boot <span class="arrow">→</span></p>
+      <div class="product">
+        <div class="image-wrapper">
+          <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers3.png?v=1699432540&width=400" alt="The Modern Winter Boot" />
+        </div>
+        <p>The Modern Winter Boot <span class="arrow">→</span></p>
       </div>
-      <div class="product-card">
-        <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers4.png?v=1699432541&width=400" alt="">
-        <p class="name">The Weekend Boot in Sage <span class="arrow">→</span></p>
+      <div class="product">
+        <div class="image-wrapper">
+          <img src="https://thesusoutdoors.com/cdn/shop/files/thesus-bestsellers4.png?v=1699432541&width=400" alt="The Weekend Boot in Sage" />
+        </div>
+        <p>The Weekend Boot in Sage <span class="arrow">→</span></p>
       </div>
     </div>
-    <button class="shop-button">Shop Bestsellers</button>
   </section>
-
  
-  <section class="faq-wrapper">
-    <h1>Try Them Out!</h1>
-    <p class="subtitle">Just contact our team for support!</p>
+<section class="faq-section">
+  <h2>Try Them Out!</h2>
+  <p>Just contact our team for support!</p>
 
-    <div class="faq">
-      <details><summary><i class="fas fa-ruler"></i><span>Find your size</span></summary>
-        <p><a href="#">Size guide</a> to find your perfect match.</p></details>
+  <div class="faq">
+    <details>
+      <summary>
+        <div class="left-group">
+          <i class="fas fa-ruler"></i>
+          <span>Find your size</span>
+        </div>
+      </summary>
+      <p><a href="#">Size guide</a> to find your perfect match.</p>
+    </details>
 
-      <details><summary><i class="fas fa-truck"></i><span>Free shipping in North America</span></summary>
-        <p>Free shipping on orders over $100.</p></details>
+    <details open>
+      <summary>
+        <div class="left-group">
+          <i class="fas fa-truck"></i>
+          <span>Free shipping in North America</span>
+        </div>
+      </summary>
+      <p>Free shipping on orders over $100.</p>
+    </details>
 
-      <details><summary><i class="fas fa-undo-alt"></i><span>Easy returns</span></summary>
-        <p>Easy returns within 30 days in North America.</p></details>
+    <details>
+      <summary>
+        <div class="left-group">
+          <i class="fas fa-undo-alt"></i>
+          <span>Easy returns</span>
+        </div>
+      </summary>
+      <p>Easy returns within 30 days in North America.</p>
+    </details>
 
-      <details><summary><i class="fas fa-tag"></i><span>Pay in 4</span></summary>
-        <p>Buy now, pay later at checkout.</p></details>
-    </div>
+    <details>
+      <summary>
+        <div class="left-group">
+          <i class="fas fa-tag"></i>
+          <span>Pay in 4</span>
+        </div>
+      </summary>
+      <p>Buy now, pay later at checkout.</p>
+    </details>
+  </div>
 
-    <button class="shop-button">Shop All</button>
-  </section>
+  <button class="shop-button">Shop All</button>
+</section>
+
 
   
   <section class="testimonial">
     <div class="testimonial-text">
       <h2>★★★★★</h2>
-      <p class="quote">“The Weekend Boots have a very nice padding in the sole… definitely true to size.”</p>
+      <p class="quote">"The Weekend Boots have a very nice padding in the sole which makes it comfortable to wear for long periods of time and these shoes definitely fit very true to size."</p>
       <p class="author">— CLAIRE</p>
     </div>
     <div class="testimonial-image">
@@ -228,18 +329,22 @@
 
   <section class="instagram">
     <h2>Join Us on Instagram</h2>
-    <p class="handle">@Thesus_Outdoors</p>
+    <p class="handle">
+  <a href="https://www.instagram.com/thesus_outdoors" target="_blank">@Thesus_Outdoors</a>
+</p>
+
+
     <div class="insta-gallery">
       <div class="insta-img">
         <img src="https://thesusoutdoors.com/cdn/shop/files/vegan-green-hiking-boots.png?v=1699600962&width=400" alt="">
-        
+  
       </div>
       <div class="insta-img">
         <img src="https://thesusoutdoors.com/cdn/shop/files/allweather-sustainable-hikingboots.png?v=1687782839&width=400" alt="">
       </div>
       <div class="insta-img">
         <img src="https://thesusoutdoors.com/cdn/shop/files/vegan-outdoor-clogs.png?v=1699600989&width=400" alt="">
-      
+        
       </div>
       <div class="insta-img">
         <img src="https://thesusoutdoors.com/cdn/shop/files/urban-style-comfortable-boots.png?v=1699601016&width=400" alt="">
@@ -251,7 +356,7 @@
  
   <section class="newsletter">
     <h2>Let's stay in touch!</h2>
-    <p>Subscribe to our newsletter. Get $10 off your first purchase, exclusive offers, and outdoor tips.</p>
+    <p>Subscribe to our newsletter. Get $10 off your first purchase, exclusive offers, and outdoor tips, trips and education</p>
     <form class="newsletter-form">
       <input type="email" placeholder="Your e-mail" required>
       <button type="submit">Sign Up</button>
@@ -262,13 +367,14 @@
   <footer class="footer">
     <div class="footer-columns">
       <div class="column brand">
-        <h2>THESUS</h2>
-        <p>Socially and environmentally<br>progressive outdoor footwear</p>
+        <!-- <h2>THESUS</h2> -->
+         <img src="images/Thesus-white-logo.webp" width="150px">
+        <p class="footer-text">Socially and environmentally<br>progressive outdoor footwear</p>
         <div class="social">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest fa-xl"></i></a>
         </div>
       </div>
 
@@ -282,7 +388,7 @@
           <li><a href="#">The Winter Weekend Boot Z™</a></li>
           <li><a href="#">The Terrus™ Clog</a></li>
           <li><a href="#">Accessories</a></li>
-          <li><a href="#">Gift Card</a></li>
+          <li><a href="#">Thesus"Gift Card</a></li>
         </ul>
       </div>
 
@@ -292,7 +398,7 @@
           <li><a href="#">Size guide</a></li>
           <li><a href="#">Shipping Policy</a></li>
           <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Wear &amp; Care FAQ</a></li>
+          <li><a href="#">Wear and Care FAQ</a></li>
         </ul>
       </div>
 
@@ -336,7 +442,53 @@
     </div>
   </footer>
 
-  
+<script>
+  const scrollContainer = document.querySelector('.product-scroll-wrapper');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const indicator = document.getElementById('indicator');
+
+  const cardWidth = 450;
+  const gap = 20;
+
+  function getTotalPages() {
+    const cards = scrollContainer.querySelectorAll('.product-card');
+    const totalCards = cards.length;
+    const containerWidth = scrollContainer.offsetWidth;
+    const visibleCards = Math.floor(containerWidth / (cardWidth + gap));
+    return Math.ceil(totalCards / visibleCards);
+  }
+
+  function getCurrentPage() {
+    const scrollLeft = scrollContainer.scrollLeft;
+    const containerWidth = scrollContainer.offsetWidth;
+    return Math.round(scrollLeft / (cardWidth + gap)) + 1;
+  }
+
+  function updateIndicator() {
+    const totalPages = getTotalPages();
+    const currentPage = Math.min(getCurrentPage(), totalPages);
+    indicator.textContent = $`{currentPage}/${totalPages}`;
+  }
+
+  function scrollToPage(direction) {
+    scrollContainer.scrollBy({
+      left: direction * (cardWidth + gap),
+      behavior: 'smooth'
+    });
+
+    setTimeout(updateIndicator, 400); // delay ensures scroll settles before calculating
+  }
+
+  nextBtn.addEventListener('click', () => scrollToPage(1));
+  prevBtn.addEventListener('click', () => scrollToPage(-1));
+
+  scrollContainer.addEventListener('scroll', updateIndicator);
+  window.addEventListener('load', updateIndicator);
+  window.addEventListener('resize', updateIndicator);
+</script>
+
+
   
 </body>
 </html>
